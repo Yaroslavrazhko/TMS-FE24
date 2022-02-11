@@ -1,58 +1,150 @@
+* {
+   box-sizing: border-box;
+}
+
+html,
 body {
-   font-family: "Raleway";
+   height: 100%;
+}
+
+body {
+   font-family: "Raleway", "Open Sans";
    font-weight: 400;
-   font-style: normal;
    font-size: 18px;
    color: #000;
+   line-height: 21px;
+   background-color: white;
+}
+
+h1,
+.title1 {
+   color: white;
+   font-size: 48px;
+   font-weight: 500;
+   line-height: 56px;
+}
+
+h2,
+.title2 {
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 42px;
+}
+
+h3,
+.title3 {
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 41px;
+   font-family: "Open Sans";
+}
+h4,
+.title4 {
+   font-family: "Open Sans";
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 33px;
+}
+h5,
+.title5 {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+h6,
+.title6 {
+   font-family: "Open Sans";
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 18px;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   background-color: black;
 }
 
 nav {
-   width: 1510px;
-   height: 75px;
-   background-color: black;
    font-family: "Open Sans";
    font-weight: 600;
-   font-style: normal;
    font-size: 14px;
 }
-.nav__logo {
-   width: 340px;
-   float: left;
-}
 
-.nav__logo__img1 {
-   padding-top: 20px;
-   padding-bottom: 20px;
-   padding-left: 115px;
-   height: 30px;
-   width: 40px;
-}
-
-.nav__logo__img2 {
-   padding-top: 20px;
-   height: 30px;
-   width: 30px;
-}
-
-.nav__menu {
-   float: right;
-   width: 1000px;
-   padding-top: 25px;
+.button {
+   font-family: "Open Sans";
+   font-weight: 600;
+   background-color: #ec7979;
+   width: 270px;
+   font-size: 18px;
+   line-height: 25px;
+   padding: 18px 0;
+   color: white;
+   cursor: pointer;
+   display: inline-block;
+   text-decoration: none;
    text-align: center;
+   min-height: 60px;
+}
+.button:hover {
+   background-color: #ab4949;
+}
+.button:active {
+   box-shadow: 0px 0px 10px #ab4949;
+   background-color: #ec7979;
 }
 
-.nav__menu__item {
-   display: inline;
+/*Main-banner*/
+
+.main-banner {
+   background: rgba(0, 0, 0, 50%);
+   background-image: url(../images/main_baner.jpg);
+   text-align: left;
+   padding: 231px 0 185px;
+   color: white;
+}
+.main-banner__logo {
+   margin-bottom: 73px;
 }
 
+.main-banner_title {
+   margin-bottom: 97px;
+}
+.main-banner_title:last-child {
+   margin-bottom: 0px;
+}
+.main-banner__text {
+   margin-bottom: 42px;
+}
+.main-banner__text:last-child {
+   margin-bottom: 0px;
+}
+
+.social {
+   background-color: #f8efef;
+   padding: 0 0 18px;
+}
+.media__title {
+   color: #333333;
+   margin-bottom: 18px;
+   max-width: 470px;
+}
+
+.media__text {
+   max-width: 470px;
+}
+/*
 .nav__menu__link {
    text-decoration: none;
    color: #fff;
    padding-right: 50px;
 }
-a:hover {
-   color: rgb(142, 142, 243);
-}
+
 
 .main-banner {
    width: 1510px;
@@ -442,3 +534,4 @@ a:hover {
    padding-top: 20px;
    color: rgba(255, 255, 255, 0.5);
 }
+*/
