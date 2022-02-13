@@ -234,6 +234,9 @@ h6,
 }
 
 /*Advantage*/
+.advantage {
+   margin-top: 50px;
+}
 
 .advantage-head {
    text-align: center;
