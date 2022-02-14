@@ -105,7 +105,7 @@ h6,
 }
 .menu {
    display: flex;
-   align-self: center;
+   align-items: center;
 }
 .menu__link {
    text-decoration: none;
@@ -115,7 +115,7 @@ h6,
    color: white;
    text-align: center;
    display: inline-block;
-   width: 135px;
+   min-width: 135px;
 }
 
 .menu__link:hover {
