@@ -1,18 +1,22 @@
-projects {
-   width: 100%;
+* {
+   box-sizing: border-box;
 }
-projects__picture {
-
-
-
-
+body {
+   font: 400 18/21px "Raleway", "Sans serif";
+   background-color: #fff;
 }
 
-projects__picture__text {
-
-
-   
+.container {
+   max-width: 500px;
+   padding: 0 15px;
+   margin: 0 auto;
 }
 
-projects__picture__text__info {
+.box1 {
+   font-size: 30px;
+   line-height: 1.4;
+   background-color: #1828bb;
+   height: 200px;
+   overflow: hidden;
+   opacity: 0;
 }
