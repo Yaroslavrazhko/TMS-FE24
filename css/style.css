@@ -71,6 +71,10 @@ h6,
    font-family: "Open Sans";
    font-weight: 600;
    font-size: 14px;
+   position: fixed;
+   z-index: 100;
+   top: 0px;
+   width: 100%;
 }
 
 .button {
@@ -100,12 +104,23 @@ h6,
    box-shadow: 0px 0px 10px #ab4949;
    background-color: #ec7979;
 }
+
+.hr {
+   width: 170px;
+   border-bottom: 1px solid #ec7979;
+}
 /*Header*/
-.header {
+
+.nav {
+   display: flex;
+   justify-content: space-between;
 }
 .menu {
    display: flex;
-   align-items: center;
+}
+
+.menu__item {
+   display: flex;
 }
 .menu__link {
    text-decoration: none;
@@ -113,9 +128,16 @@ h6,
    font-weight: 600;
    line-height: 19px;
    color: white;
-   text-align: center;
+   padding: 0 38px;
    display: inline-block;
+   min-height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    min-width: 135px;
+}
+.nav__logo {
+   align-self: center;
 }
 
 .menu__link:hover {
@@ -125,15 +147,12 @@ h6,
    background-color: #ab4949;
 }
 
-.nav {
-   display: flex;
-   justify-content: space-between;
-}
-
 /*Main-banner*/
 
 .main-banner {
-   background-image: url(../images/main_baner.jpg);
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main_baner.jpg);
+   background-size: cover;
+   background-position: 0 100%;
    text-align: left;
    padding: 231px 0 185px;
    color: white;
@@ -168,6 +187,10 @@ h6,
    padding: 0 0 18px;
    margin-bottom: 109px;
 }
+.media {
+   display: flex;
+   justify-content: space-between;
+}
 .media__title {
    color: #333333;
    margin-bottom: 18px;
@@ -178,25 +201,18 @@ h6,
 .media__text {
    max-width: 470px;
 }
-.media__info {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
 
 .media-brands__list {
    display: flex;
    justify-content: space-between;
    width: 637px;
-}
-
-.media {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   padding: 28px 0 10px;
 }
 
 /*Description*/
+.description {
+   margin-bottom: 50px;
+}
 .description__link {
    font-family: "Open Sans";
    font-size: 14px;
@@ -210,6 +226,8 @@ h6,
    border-color: #c6cbcd;
    display: flex;
    justify-content: space-between;
+   position: relative;
+   z-index: 1;
 }
 
 .description__text {
@@ -228,33 +246,37 @@ h6,
    display: flex;
 }
 .description__item {
-   border: 1px solid black;
-   width: 150px;
+   width: 185px;
    text-align: center;
+   padding: 10px 0;
+}
+.description__item:first-child {
+   border: 1px #c6cbcd;
+   border-style: solid solid none;
+   position: relative;
+   z-index: 2;
+   width: 200px;
+   text-align: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-color: white;
+   top: 1px;
 }
 
 /*Advantage*/
 .advantage {
-   margin-top: 50px;
+   padding: 0 0 58px;
 }
-
 .advantage-head {
    text-align: center;
 }
-
 .advantage__title {
    padding: 54px 0;
    text-transform: uppercase;
 }
-
-.hr {
-   width: 170px;
-   border-bottom: 1px solid #ec7979;
-}
 .hr_light {
    border-color: white;
 }
-
 .advantage__hr {
    margin-bottom: 40px;
 }
@@ -264,13 +286,9 @@ h6,
 .advantage__subtitle {
    margin-bottom: 110px;
 }
-
 .advantage__list {
    display: flex;
-   justify-content: space-between;
-   max-width: 105px;
 }
-
 .benefits-card__img {
    width: 92px;
    height: 92px;
@@ -278,19 +296,17 @@ h6,
    border: 1px solid #ec7979;
    margin-bottom: 39px;
 }
-
 .benefits-card {
    text-align: center;
+   max-width: 370px;
+   margin-right: 30px;
+}
+.benefits-card:last-child {
+   margin-right: 0px;
 }
 .benefits-card__title {
    padding: 34px 0;
    margin-bottom: 8px;
-}
-
-.benefits-card__text {
-   display: inline-block;
-   width: 370px;
-   margin-bottom: 58px;
 }
 
 /*Price*/
@@ -302,15 +318,20 @@ h6,
    text-align: center;
    padding: 54px 0;
 }
-.price__item {
-   display: inline-block;
-   width: 370px;
-}
 .price__subtitle {
    text-align: center;
+   margin-bottom: 79px;
+}
+.price__item {
+   width: 370px;
+   text-align: center;
+   margin-right: 30px;
+}
+.price__item:last-child {
+   margin-right: 0px;
 }
 .price__rate {
-   text-align: center;
+   display: flex;
 }
 .title5_grey {
    color: rgba(255, 255, 255, 0.5);
@@ -320,9 +341,6 @@ h6,
    margin-bottom: 40px;
 }
 
-.price__subtitle {
-   margin-bottom: 79px;
-}
 .price__rate__title {
    background-color: #333333;
    border: 1px solid #f5f5f5;
@@ -345,9 +363,6 @@ h6,
    border: 1px solid #f5f5f5;
    padding: 15px 0;
 }
-.for-selector + div {
-   margin-top: -20px;
-}
 
 /*Opinion*/
 .opinion {
@@ -362,7 +377,6 @@ h6,
 }
 .opinion__list {
    display: flex;
-   justify-content: space-between;
 }
 .opinion-head__hr {
    margin-bottom: 40px;
@@ -370,11 +384,17 @@ h6,
 .opinion-head__subtitle {
    margin-bottom: 83px;
 }
-
+.mind-card {
+   margin-right: 30px;
+}
+.main-card:last-child {
+   margin-right: 0px;
+}
 .blockquote-figure {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
+}
+.treangular {
+   position: relative;
+   left: 70px;
 }
 .mind-card__blockquote {
    border-radius: 10px;
@@ -389,21 +409,23 @@ h6,
    border-right: 15px solid transparent;
    border-top: 20px solid #e2e2e2;
    align-self: center;
-   padding-bottom: 46px;
+   margin-bottom: 46px;
 }
 .profile {
    display: flex;
 }
 .personal-data {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
    margin-left: 30px;
 }
-
+.mind-card__customer-name {
+   padding: 11px 0;
+   margin-bottom: 5px;
+}
+.mind-card__position {
+}
 /*Axure design*/
 .axure-design {
-   background-image: url(/images/axure-design.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/axure-design.jpg);
    padding: 50px 0;
    text-align: center;
    color: white;
@@ -451,4 +473,5 @@ h6,
 }
 .media-footer {
    margin-bottom: 35px;
+   padding: 0px;
 }
