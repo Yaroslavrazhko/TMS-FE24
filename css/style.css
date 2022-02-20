@@ -93,8 +93,30 @@ h6,
    min-height: 60px;
 }
 .button_light {
+   font-family: "Open Sans";
+   font-weight: 600;
+   width: 270px;
+   font-size: 18px;
+   line-height: 25px;
+   padding: 18px 0;
+   color: white;
+   display: inline-block;
+   text-decoration: none;
+   text-align: center;
+   min-height: 60px;
+   cursor: pointer;
    background-color: transparent;
    border: 2px solid white;
+}
+.button_light:hover {
+   color: #ec7979;
+   border: 2px solid #ec7979;
+   background-color: transparent;
+}
+.button_light:active {
+   color: white;
+   border: 2px solid #ec7979;
+   background-color: #ab4949;
 }
 
 .button:hover {
@@ -327,8 +349,13 @@ h6,
    text-align: center;
    margin-right: 30px;
 }
+.price__item + div {
+   transform: translate(0, -20px);
+}
+
 .price__item:last-child {
    margin-right: 0px;
+   transform: initial;
 }
 .price__rate {
    display: flex;
