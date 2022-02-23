@@ -1,33 +1,311 @@
 :root {
    --roof: red;
-   --width: 2000px;
-   --height: 1200px;
    --house: rgb(80, 129, 125);
+   --frame: blue;
+   --fence: green;
 }
 
-.ground {
+.frame {
    margin: 50px auto;
-   max-width: 2000px;
-   max-width: 1200px;
-   border: 5px solid blue;
+   width: 4000px;
+   height: 2800px;
+   border: 5px solid var(--frame);
+   position: relative;
 }
 
-.main {
-   width: 200px;
-   height: 250px;
-   background-color: var(--house);
-}
 .house {
-   left: calc(var(--width) / 2);
-   top: calc(var(--height) / 2);
+   position: absolute;
+   left: 600px;
+   top: 1400px;
+   z-index: 50;
+}
+.main {
+   width: 600px;
+   height: 800px;
+   background-color: var(--house);
 }
 
 .roof {
+   position: absolute;
+   top: -400px;
+   left: -200px;
+}
+.steam-tube {
+   width: 150px;
+   height: 400px;
+   background-color: rgb(107, 93, 93);
+   position: absolute;
+   left: 200px;
+   top: -50px;
+   z-index: -1;
+}
+.house-top {
    width: 0;
    height: 0;
-   border-left: 50px solid transparent;
-   border-right: 50px solid transparent;
-   border-bottom: 100px solid var(--roof);
+   border-left: 500px solid transparent;
+   border-right: 500px solid transparent;
+   border-bottom: 400px solid var(--roof);
+}
+.opening {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: white;
+   position: absolute;
+   top: 200px;
+   left: 420px;
+}
+
+.door {
+   position: absolute;
+   bottom: 60px;
+   left: 50px;
+}
+
+.entrance {
+   width: 200px;
+   height: 400px;
+   background-color: rgb(90, 69, 87);
+   border: 2px solid black;
+}
+.lock {
+   background-color: red;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   top: 200px;
+   right: 40px;
+}
+
+.window {
+   box-sizing: border-box;
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   right: 50px;
+   top: 150px;
+}
+.section1 {
+   background-color: white;
+   border: 4px solid black;
+   width: 92px;
+   height: 192px;
+}
+.section2 {
+   width: 92px;
+   height: 92px;
+   background-color: #fff;
+   border: 4px solid black;
+   position: absolute;
+   left: 100px;
+   top: 0px;
+}
+.section3 {
+   width: 92px;
+   height: 92px;
+   background-color: #fff;
+   border: 4px solid black;
+   position: absolute;
+   left: 100px;
+   bottom: 0px;
+}
+.fence {
+   position: absolute;
+   left: 1500px;
+   top: 1600px;
+   display: flex;
+   z-index: 10;
+}
+.fence-item {
+   margin-right: 50px;
+}
+.fence-item:last-child {
+   margin-right: 0px;
+}
+.fence-minor {
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   border-bottom: 100px solid var(--fence);
+}
+.fence-main {
+   width: 50px;
+   height: 500px;
+   background-color: var(--fence);
+}
+
+.tree {
+   position: absolute;
+   left: 2000px;
+   top: 800px;
+   z-index: 51;
+}
+
+.tree__branches__high {
+   width: 0;
+   height: 0;
+   border-left: 200px solid transparent;
+   border-right: 200px solid transparent;
+   border-bottom: 400px solid green;
    position: relative;
-   top: calc(var(--height) / 2);
+}
+.tree__branches__medium {
+   width: 0;
+   height: 0;
+   border-left: 200px solid transparent;
+   border-right: 200px solid transparent;
+   border-bottom: 400px solid green;
+   position: relative;
+   top: -150px;
+}
+.tree__base {
+   width: 150px;
+   height: 300px;
+   background-color: rgb(48, 44, 44);
+   position: relative;
+   left: 130px;
+   top: -150px;
+}
+
+.see {
+   width: 100%;
+   height: 800px;
+   background-color: aqua;
+   position: absolute;
+   top: 800px;
+   z-index: 0;
+}
+
+.ground {
+   width: 100%;
+   height: 1200px;
+   position: absolute;
+   background-color: #85321d;
+   bottom: 0px;
+}
+
+.sun {
+   width: 400px;
+   height: 400px;
+   border-radius: 0 0 300px 0;
+   background-color: yellow;
+   position: absolute;
+   left: 0px;
+}
+
+.rainbow {
+   position: absolute;
+   right: 0px;
+   top: -100px;
+}
+
+.rainbow__red {
+   width: 1400px;
+   height: 1400px;
+   border-radius: 100% 0 0 0;
+   background-color: red;
+   position: absolute;
+   right: 0px;
+   top: 300px;
+}
+.rainbow__orange {
+   width: 1300px;
+   height: 1300px;
+   border-radius: 100% 0 0 0;
+   background-color: orange;
+   position: absolute;
+   right: 0px;
+   top: 400px;
+}
+.rainbow__yellow {
+   width: 1200px;
+   height: 1200px;
+   border-radius: 100% 0 0 0;
+   background-color: yellow;
+   position: absolute;
+   right: 0px;
+   top: 500px;
+}
+.rainbow__green {
+   width: 1100px;
+   height: 1100px;
+   border-radius: 100% 0 0 0;
+   background-color: green;
+   position: absolute;
+   right: 0px;
+   top: 600px;
+}
+.rainbow__blue {
+   width: 1000px;
+   height: 1000px;
+   border-radius: 100% 0 0 0;
+   background-color: blue;
+   position: absolute;
+   right: 0px;
+   top: 700px;
+}
+.rainbow__violet {
+   width: 900px;
+   height: 900px;
+   border-radius: 100% 0 0 0;
+   background-color: violet;
+   position: absolute;
+   right: 0px;
+   top: 800px;
+}
+.rainbow__aqua {
+   width: 800px;
+   height: 800px;
+   border-radius: 100% 0 0 0;
+   background-color: aqua;
+   position: absolute;
+   right: 0px;
+   top: 900px;
+}
+
+.sky {
+   position: absolute;
+   top: 150px;
+   left: 700px;
+}
+
+.sky2 {
+   width: 600px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #00bfff;
+   transform: rotateZ(45deg);
+   position: absolute;
+   left: -80px;
+}
+.sky1 {
+   width: 400px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #00bfff;
+   transform: scaleX(1.8);
+   position: absolute;
+}
+
+.sky4 {
+   width: 600px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #00bfff;
+   transform: rotateZ(45deg);
+   position: absolute;
+   left: 1200px;
+   top: 200px;
+}
+.sky3 {
+   width: 400px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #00bfff;
+   transform: scaleX(1.8);
+   position: absolute;
+   left: 1300px;
+   top: 200px;
 }
