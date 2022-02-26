@@ -202,6 +202,48 @@ h6,
 .main-banner__text:last-child {
    margin-bottom: 0px;
 }
+.form {
+   width: 470px;
+   background-color: white;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.form-input {
+   width: 100%;
+   font-size: 14px;
+   line-height: 19px;
+   font-family: "Open Sans";
+   font-weight: 400;
+   color: black;
+   border: none;
+   border-bottom: 1px solid #bdbdbd;
+   padding: 15px 0;
+   background: none;
+   outline: none;
+}
+.form-input:focus {
+   border-color: black;
+}
+.form-input:hover {
+   cursor: pointer;
+}
+
+.form-input::placeholder {
+   color: #bdbdbd;
+}
+.form-title {
+   color: #000;
+}
+.form__button {
+   width: 100%;
+}
+.form__row + .form__row {
+   margin-top: 15px;
+}
+.form-description {
+   padding: 30px 50px 75px;
+}
 
 /*Social media*/
 .social {
