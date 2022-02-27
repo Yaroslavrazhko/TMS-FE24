@@ -93,25 +93,13 @@ h6,
    min-height: 60px;
 }
 .button_light {
-   font-family: "Open Sans";
-   font-weight: 600;
-   width: 270px;
-   font-size: 18px;
-   line-height: 25px;
-   padding: 18px 0;
-   color: white;
-   display: inline-block;
-   text-decoration: none;
-   text-align: center;
-   min-height: 60px;
-   cursor: pointer;
    background-color: transparent;
    border: 2px solid white;
 }
 .button_light:hover {
    color: #ec7979;
    border: 2px solid #ec7979;
-   background-color: transparent;
+   background-color: none;
 }
 .button_light:active {
    color: white;
@@ -179,15 +167,20 @@ h6,
    padding: 231px 0 185px;
    color: white;
 }
+.main__content {
+   display: flex;
+   justify-content: space-between;
+}
+
 .main-banner__logo {
    margin-bottom: 73px;
 }
 
-.main-banner_title {
+.main-banner__title {
    margin-bottom: 55px;
    max-width: 670px;
 }
-.main-banner_title:last-child {
+.main-banner__title:last-child {
    margin-bottom: 0px;
 }
 
@@ -207,6 +200,10 @@ h6,
    background-color: white;
    border-radius: 10px;
    overflow: hidden;
+}
+.form__free {
+   color: red;
+   font-style: normal;
 }
 
 .form-input {
@@ -232,8 +229,10 @@ h6,
 .form-input::placeholder {
    color: #bdbdbd;
 }
-.form-title {
+.form__title {
    color: #000;
+   text-align: center;
+   text-transform: uppercase;
 }
 .form__button {
    width: 100%;
@@ -249,7 +248,6 @@ h6,
 .social {
    background-color: #f8efef;
    padding: 0 0 18px;
-   margin-bottom: 109px;
 }
 .media {
    display: flex;
@@ -275,6 +273,7 @@ h6,
 
 /*Description*/
 .description {
+   padding-top: 109px;
    margin-bottom: 50px;
 }
 .description__link {
@@ -304,7 +303,7 @@ h6,
 }
 .description__subtitle {
    margin-bottom: 27px;
-   max-width: 570px;
+   width: 570px;
 }
 .description__list {
    display: flex;
@@ -391,7 +390,7 @@ h6,
    text-align: center;
    margin-right: 30px;
 }
-.price__item + div {
+.price__item-accent {
    transform: translate(0, -20px);
 }
 
@@ -487,11 +486,9 @@ h6,
    margin-left: 30px;
 }
 .mind-card__customer-name {
-   padding: 11px 0;
-   margin-bottom: 5px;
+   padding: 6px 0;
 }
-.mind-card__position {
-}
+
 /*Axure design*/
 .axure-design {
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/axure-design.jpg);
@@ -512,6 +509,7 @@ h6,
 /*Contact*/
 .contact {
    padding: 50px 0;
+   text-align: center;
 }
 .contact__title {
    padding: 54px 0;
@@ -524,13 +522,30 @@ h6,
    text-align: center;
    margin-bottom: 89px;
 }
-.contact__date {
-   margin-bottom: 50px;
-}
 
 .contact__place {
    text-align: center;
 }
+
+.form__contact {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   align-self: flex-end;
+   margin-bottom: 50px;
+}
+.form__description {
+   width: 570px;
+   margin-right: 30px;
+}
+.form__area {
+   width: 570px;
+}
+.form__textarea {
+   resize: none;
+}
+
+
 
 /*Footer*/
 .footer {
