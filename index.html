@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Axit</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -32,21 +34,24 @@
         </ul>
       </nav>
     </div>
-
   </header>
+
+
+
   <main>
     <!--Main banner-->
     <section class="main-banner">
       <div class="container">
-        <div class="main__content">
-          <div class="main__head">
-            <img src="./images/logo_axit.svg" alt="Axit" class="main-banner__logo">
+        <div class="row">
+          <div class="main__head col-lg-7 col-md-6">
+            <img srcset="./images/logo_axit.svg" alt="Axit" class="main-banner__logo">
+
             <h1 class="title1 main-banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-            <hr class="hr hr_light main-banner__hr">
+            <hr class="hr hr--light main-banner__hr">
             <p class="title5 main-banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a title="Download" href="#0" class="button button_light">Download</a>
+            <a title="Download" href="#0" class="button button--light">Download</a>
           </div>
-          <div class="main__form">
+          <div class="main__form col-lg-5 col-md-6">
             <form class="form">
               <div class="form-description">
                 <h2 class="form__title title4">Try Your <em class="form__free">FREE</em> Trial Today</h2>
@@ -69,23 +74,19 @@
 
 
 
-
-
-
-
     <!--Social media-->
     <section class="social">
       <div class="container">
-        <address class="media">
-          <div class="media__info">
+        <address class="row">
+          <div class="media__info col-lg-5 col-md-4">
             <h3 class="title4 media__title">Social Media</h3>
-            <p class="media__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quo officiis
+            <p class="title5 media__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quo officiis
               maxime.</p>
           </div>
-          <div class="media-brands">
-            <ul class="media-brands__list">
+          <div class="media-brands col-lg-7 col-md-8">
+            <ul class="media-brands__list d-flex justify-content-between">
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
+                <a href="" class="media-brands__link ">
                   <img src="./images/facebook_icon.svg" alt="facebook" class="media-brands__img"></a>
               </li>
 
@@ -127,16 +128,17 @@
         <div class="description__menu">
 
           <ul class="description__list">
-            <li class="description__item"><a href="" class="description__link">TAB1</a></li>
-            <li class="description__item"><a href="" class="description__link">TAB2</a></li>
-            <li class="description__item"><a href="" class="description__link">TAB3</a></li>
+            <li class="description__item"><a href="" class="description__link title6">TAB1</a></li>
+            <li class="description__item"><a href="" class="description__link title6">TAB2</a></li>
+            <li class="description__item"><a href="" class="description__link title6">TAB3</a></li>
           </ul>
         </div>
 
         <div class="description__info">
           <div class="description__text">
             <h3 class="description__title title3">Tabs with soft transitioning effect.</h3>
-            <p class="description__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            <p class="description__subtitle title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod
               bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
               justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
               penatibus et magnis dis parturient montes.
@@ -146,41 +148,39 @@
 
             <a href="" class="button">Download</a>
           </div>
-          <div class="description__img">
-            <img src="./images/american_statue.jpg" alt="tabs with soft transitioning effect1"
-              class="description__img__display">
-          </div>
+          <picture>
+            <source srcset="./images/ipad/statue1024.jpg" media="(max-width: 1199px)">
+            <img src="./images/american_statue.jpg" alt="tabs with soft transitioning effect1">
+          </picture>
         </div>
-      </div>
-      </div>
     </section>
 
     <!--Advantages-->
     <section class="advantage">
       <div class="container">
-        <div class="advantage-head">
-          <h2 class="title2 advantage__title">WhY THIS IS AWESOME</h2>
-          <hr class="hr advantage__hr">
-          <p class="title5_light advantage__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div class="title-head">
+          <h2 class="title2 title__block">WhY THIS IS AWESOME</h2>
+          <hr class="hr hr__block">
+          <p class="title5 title5--light subtitle__block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
 
-        <ul class="advantage__list">
-          <li class="benefits-card">
+        <ul class="row d-flex justify-content-center">
+          <li class="benefits-card col-lg-4 col-md-8 ">
             <img src="./images/adv_1.svg" alt="Thoughtful Design1" class="benefits-card__img">
             <h4 class="title4 benefits-card__title">Thoughtful Design</h4>
             <p class="benefits-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
               viverra.</p>
           </li>
-          <li class="benefits-card">
+          <li class="benefits-card col-lg-4 col-md-8 ">
             <img src="./images/adv_2.svg" alt="Thoughtful Design2" class="benefits-card__img">
             <h4 class="title4 benefits-card__title">Thoughtful Design</h4>
             <p class="benefits-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
               viverra.</p>
           </li>
-          <li class="benefits-card">
+          <li class="benefits-card col-lg-4 col-md-8 ">
             <img src="./images/adv_3.svg" alt="Thoughtful Design3" class="benefits-card__img">
             <h4 class="title4 benefits-card__title">Thoughtful Design</h4>
             <p class="benefits-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -195,122 +195,116 @@
     <!--Price-->
     <section class="price">
       <div class="container">
-        <h2 class="title2 price__title">PRICING OPRIONS</h2>
-        <hr class="hr price__hr">
-        <p class="title5_light price__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="price__rate">
-          <div class="price__item">
-            <h4 class="title4 price__rate__title">Basic</h4>
-            <p class="title2 price__rate__cost">$10</p>
-            <p class="title5_grey price__rate__text">Free for life</p>
-            <ul class="pice__list">
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
+        <div class="title-head">
+          <h2 class="title2 title__block">PRICING OPRIONS</h2>
+          <hr class="hr hr__block">
+          <p class="title5--light subtitle__block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row">
+          <div class="price__item col-lg-4 col-md-4">
+            <h4 class="title4 price-rate__title">Basic</h4>
+            <p class="title2 price-rate__cost">$10</p>
+            <p class="title5--grey price-rate__text">Free for life</p>
+
+            <ul class="pice-list">
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
             </ul>
           </div>
 
-          <div class="price__item price__item-accent">
-            <h4 class="title4 price__rate__title">Optima</h4>
-            <p class="title2 price__rate__cost">$20</p>
-            <p class="title5_grey price__rate__text">Free for life</p>
-            <ul class="pice__list">
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
+          <div class="price__item price__item-accent col-lg-4 col-md-4">
+            <h4 class="title4 price-rate__title">Optima</h4>
+            <p class="title2 price-rate__cost">$20</p>
+            <p class="title5--grey price-rate__text">Free for life</p>
+            <ul class="pice-list">
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
             </ul>
           </div>
-
-          <div class="price__item">
-            <h4 class="title4 price__rate__title">Pro</h4>
-            <p class="title2 price__rate__cost">$30</p>
-            <p class="title5_grey price__rate__text">Free for life</p>
-            <ul class="pice__list">
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
-              <li class="price__list__item">1 GB OF Space</li>
+          <div class="price__item col-lg-4 col-md-4">
+            <h4 class="title4 price-rate__title">Pro</h4>
+            <p class="title2 price-rate__cost">$30</p>
+            <p class="title5--grey price-rate__text">Free for life</p>
+            <ul class="pice-list">
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
+              <li class="title5 price-list__item">1 GB OF Space</li>
             </ul>
           </div>
-
         </div>
       </div>
-
     </section>
     <!--Opinion-->
     <section class="opinion">
       <div class="container">
-        <div class="opinion-head">
-          <h2 class="title2 opinion-head__title">what our customers are saying</h2>
-          <hr class="hr opinion-head__hr">
-          <p class="title5_light opinion-head__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="title-head">
+          <h2 class="title2 title__block">what our customers are saying</h2>
+          <hr class="hr hr__block">
+          <p class="title5--light subtitle__block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="opinion__list">
-          <div class="mind-card">
-
-            <blockquote class="title5_light mind-card__blockquote ">Lorem ipsum dolor sit amet,
+        <div class="row">
+          <div class="mind-card col-lg-4 col-md-4">
+            <blockquote class="title5 title5--light mind-card__blockquote ">Lorem ipsum dolor sit amet,
               consectetur adipisicing elit. Doloribus
               accusamus expedita repellat similique
               odio aspernatur ex, architecto eaque
-              quo suscipit.</blockquote>
-            <div class="treangular"></div>
-
+              quo suscipit.
+              <div class="treangular"></div>
+            </blockquote>
             <div class="profile">
               <img src="./images/Ellipse 7-1.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
                 <h3 class="title4 mind-card__customer-name">Davis Rhiel Madsen</h3>
-                <p class="mind-card__position">Manager</p>
+                <p class="title5 mind-card__position">Manager</p>
               </div>
-
             </div>
           </div>
 
-          <div class="mind-card">
-            <div class="blockquote-figure">
-              <blockquote class="title5_light mind-card__blockquote ">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Doloribus
-                accusamus expedita repellat similique
-                odio aspernatur ex, architecto eaque
-                quo suscipit.</blockquote>
+
+          <div class="mind-card col-lg-4 col-md-4">
+            <blockquote class="title5 title5--light mind-card__blockquote ">Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Doloribus
+              accusamus expedita repellat similique
+              odio aspernatur ex, architecto eaque
+              quo suscipit.
               <div class="treangular"></div>
-            </div>
+            </blockquote>
             <div class="profile">
               <img src="./images/Ellipse 7-2.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
                 <h3 class="title4 mind-card__customer-name">Jaydon Rosser</h3>
-                <p class="mind-card__position">Manager</p>
+                <p class="title5 mind-card__position">Manager</p>
               </div>
-
             </div>
-
           </div>
 
-          <div class="mind-card">
-            <div class="blockquote-figure">
-              <blockquote class="title5_light mind-card__blockquote ">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Doloribus
-                accusamus expedita repellat similique
-                odio aspernatur ex, architecto eaque
-                quo suscipit.</blockquote>
+
+          <div class="mind-card col-lg-4 col-md-4">
+            <blockquote class="title5 title5--light mind-card__blockquote ">Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Doloribus
+              accusamus expedita repellat similique
+              odio aspernatur ex, architecto eaque
+              quo suscipit.
               <div class="treangular"></div>
-            </div>
+            </blockquote>
             <div class="profile">
               <img src="./images/Ellipse 7.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
                 <h3 class="title4 mind-card__customer-name">Cooper Dorwart</h3>
-                <p class="mind-card__position">Manager</p>
+                <p class="title5 mind-card__position">Manager</p>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
@@ -318,21 +312,25 @@
     <!--Axure-design-->
     <section class="axure-design">
       <div class="container">
-        <h2 class="title2 axure-design__title">STYLISH AXURE DESIGN</h2>
-        <hr class="axure-design__hr hr hr_light">
-        <p class="title5 axure-design__text">Use the sections you need, remove the ones you don't. Create gorgeous
-          prototypes
-          faster than ever!</p>
-        <a href="" class="button button_light">Download</a>
+        <div class="title-head">
+          <h2 class="title2 title__block">STYLISH AXURE DESIGN</h2>
+          <hr class="hr__block hr hr--light">
+          <p class="title5 subtitle__block">Use the sections you need, remove the ones you don't. Create gorgeous
+            prototypes
+            faster than ever!</p>
+        </div>
+        <a href="" class="button button--light">Download</a>
       </div>
 
     </section>
     <!--Contact-->
     <section class="contact">
       <div class="container">
-        <h2 class="title2 contact__title">CONTACT US</h2>
-        <hr class="hr contact__hr ">
-        <p class="title5_light contact__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="title-head">
+          <h2 class="title2 title__block">CONTACT US</h2>
+          <hr class="hr hr__block ">
+          <p class="title5--light subtitle__block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
         <form class="form__contact">
           <div class="form__description">
             <div class="form__row">
@@ -360,35 +358,44 @@
   <!--Footer-->
   <footer class="footer">
     <div class="container">
-      <div class="media-footer media-brands">
-        <ul class=" media-brands__list">
-          <li class="media-brands__item"><a href="" class="mediam-brands__link-white">
-              <img src="./images/facebook_icon.svg" alt="facebook"></a>
+      <div class="media-footer col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+        <ul class="d-flex justify-content-between">
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link ">
+              <img src="./images/facebook_icon.svg" alt="facebook" class="media-brands__img"></a>
           </li>
 
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/github_icon.svg" alt="github"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/github_icon.svg" alt="github" class="media-brands__img"></a>
           </li>
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/instagram_icon.svg" alt="Instagram"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/instagram_icon.svg" alt="Instagram" class="media-brands__img"></a>
           </li>
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/linkedin_icon.svg" alt="LinkedIn"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/linkedin_icon.svg" alt="LinkedIn" class="media-brands__img"></a>
           </li>
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/pinterest_icon.svg" alt="Pinterest"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/pinterest_icon.svg" alt="Pinterest" class="media-brands__img"></a>
           </li>
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/rss_icon.svg" alt="rss"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/rss_icon.svg" alt="rss" class="media-brands__img"></a>
           </li>
-          <li class="media-brands__item"><a href="" class="mediam-brands__link_white">
-              <img src="./images/twitter_icon.svg" alt="twitter"></a>
+          <li class="media-brands__item">
+            <a href="" class="media-brands__link">
+              <img src="./images/twitter_icon.svg" alt="twitter" class="media-brands__img"></a>
           </li>
         </ul>
       </div>
-      <div class="title5_grey footer__theme">© 2015 Axure Themes</div>
-    </div>
 
+
+      <div class="title5 title5--grey footer__theme">© 2015 Axure Themes
+      </div>
+    </div>
   </footer>
 
 </body>

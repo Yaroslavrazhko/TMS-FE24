@@ -92,16 +92,16 @@ h6,
    text-align: center;
    min-height: 60px;
 }
-.button_light {
+.button--light {
    background-color: transparent;
    border: 2px solid white;
 }
-.button_light:hover {
+.button--light:hover {
    color: #ec7979;
    border: 2px solid #ec7979;
    background-color: none;
 }
-.button_light:active {
+.button--light:active {
    color: white;
    border: 2px solid #ec7979;
    background-color: #ab4949;
@@ -191,12 +191,13 @@ h6,
 }
 .main-banner__text {
    margin-bottom: 42px;
+   max-width: 270px;
 }
 .main-banner__text:last-child {
    margin-bottom: 0px;
 }
 .form {
-   width: 470px;
+   /*width: 470px;*/
    background-color: white;
    border-radius: 10px;
    overflow: hidden;
@@ -233,6 +234,8 @@ h6,
    color: #000;
    text-align: center;
    text-transform: uppercase;
+   padding-bottom: 30px;
+   margin-bottom: 45px;
 }
 .form__button {
    width: 100%;
@@ -249,32 +252,31 @@ h6,
    background-color: #f8efef;
    padding: 0 0 18px;
 }
-.media {
+/*.media {
    display: flex;
    justify-content: space-between;
-}
+}*/
 .media__title {
    color: #333333;
    margin-bottom: 18px;
-   max-width: 470px;
+   /*max-width: 470px;*/
    padding: 14px 0;
 }
 
 .media__text {
-   max-width: 470px;
+   /*max-width: 470px;*/
 }
 
 .media-brands__list {
-   display: flex;
+   /*display: flex;
    justify-content: space-between;
-   width: 637px;
+   width: 637px;*/
    padding: 28px 0 10px;
 }
 
 /*Description*/
 .description {
-   padding-top: 109px;
-   margin-bottom: 50px;
+   padding: 109px 0 50px;
 }
 .description__link {
    font-family: "Open Sans";
@@ -290,7 +292,6 @@ h6,
    display: flex;
    justify-content: space-between;
    position: relative;
-   z-index: 1;
 }
 
 .description__text {
@@ -303,7 +304,6 @@ h6,
 }
 .description__subtitle {
    margin-bottom: 27px;
-   width: 570px;
 }
 .description__list {
    display: flex;
@@ -330,28 +330,30 @@ h6,
 .advantage {
    padding: 0 0 58px;
 }
+.title-head {
+   text-align: center;
+}
 .advantage-head {
    text-align: center;
 }
-.advantage__title {
+.title__block {
    padding: 54px 0;
    text-transform: uppercase;
 }
-.hr_light {
+.hr--light {
    border-color: white;
 }
-.advantage__hr {
+.hr__block {
    margin-bottom: 40px;
 }
-.title5_light {
+.title5--light {
    color: #86878b;
 }
-.advantage__subtitle {
+.subtitle__block {
+   text-align: center;
    margin-bottom: 110px;
 }
-.advantage__list {
-   display: flex;
-}
+
 .benefits-card__img {
    width: 92px;
    height: 92px;
@@ -361,12 +363,8 @@ h6,
 }
 .benefits-card {
    text-align: center;
-   max-width: 370px;
-   margin-right: 30px;
 }
-.benefits-card:last-child {
-   margin-right: 0px;
-}
+
 .benefits-card__title {
    padding: 34px 0;
    margin-bottom: 8px;
@@ -377,56 +375,36 @@ h6,
    background: #f5f5f5;
    padding: 50px 0;
 }
-.price__title {
-   text-align: center;
-   padding: 54px 0;
-}
-.price__subtitle {
-   text-align: center;
-   margin-bottom: 79px;
-}
+
 .price__item {
-   width: 370px;
    text-align: center;
-   margin-right: 30px;
 }
 .price__item-accent {
    transform: translate(0, -20px);
 }
 
-.price__item:last-child {
-   margin-right: 0px;
-   transform: initial;
-}
-.price__rate {
-   display: flex;
-}
-.title5_grey {
+.title5--grey {
    color: rgba(255, 255, 255, 0.5);
 }
 
-.price__hr {
-   margin-bottom: 40px;
-}
-
-.price__rate__title {
+.price-rate__title {
    background-color: #333333;
    border: 1px solid #f5f5f5;
    padding: 14px 0;
    color: white;
 }
-.price__rate__cost {
+.price-rate__cost {
    background-color: #333333;
    border: 1px solid #f5f5f5;
    padding: 29px 0;
    color: white;
 }
-.price__rate__text {
+.price-rate__text {
    background-color: #333333;
    border: 1px solid #f5f5f5;
    padding: 15px 0;
 }
-.price__list__item {
+.price-list__item {
    background-color: #fff;
    border: 1px solid #f5f5f5;
    padding: 15px 0;
@@ -439,36 +417,18 @@ h6,
 .opinion-head {
    text-align: center;
 }
-.opinion-head__title {
-   text-transform: uppercase;
-   padding: 54px 0;
-}
-.opinion__list {
-   display: flex;
-}
+
 .opinion-head__hr {
    margin-bottom: 40px;
 }
-.opinion-head__subtitle {
-   margin-bottom: 83px;
-}
-.mind-card {
-   margin-right: 30px;
-}
-.main-card:last-child {
-   margin-right: 0px;
-}
-.blockquote-figure {
-}
-.treangular {
-   position: relative;
-   left: 70px;
-}
+
 .mind-card__blockquote {
+   text-align: center;
    border-radius: 10px;
-   width: 370px;
    background-color: #e2e2e2;
    padding: 38px 15px;
+   position: relative;
+   margin-bottom: 66px;
 }
 .treangular {
    width: 0;
@@ -477,7 +437,9 @@ h6,
    border-right: 15px solid transparent;
    border-top: 20px solid #e2e2e2;
    align-self: center;
-   margin-bottom: 46px;
+   position: absolute;
+   bottom: -20px;
+   left: 50px;
 }
 .profile {
    display: flex;
@@ -495,15 +457,6 @@ h6,
    padding: 50px 0;
    text-align: center;
    color: white;
-}
-.axure-design__title {
-   padding: 54px 0;
-}
-.axure-design__hr {
-   margin-bottom: 40px;
-}
-.axure-design__text {
-   margin-bottom: 73px;
 }
 
 /*Contact*/
@@ -545,15 +498,13 @@ h6,
    resize: none;
 }
 
-
-
 /*Footer*/
 .footer {
    padding: 40px 0 27px;
    background-color: black;
    text-align: center;
-   display: flex;
-   justify-content: center;
+   /*display: flex;
+   justify-content: center;*/
 }
 .media-footer {
    margin-bottom: 35px;

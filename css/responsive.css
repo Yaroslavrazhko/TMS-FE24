@@ -1,0 +1,163 @@
+@media (max-width: 1399px) {
+   .container-xxl,
+   .container-xl,
+   .container-lg,
+   .container-md,
+   .container-sm,
+   .container {
+      max-width: 1320px;
+   }
+}
+@media (max-width: 1199px) {
+   .container-xl,
+   .container-lg,
+   .container-md,
+   .container-sm,
+   .container {
+      max-width: 1140px;
+   }
+   /*main-banner*/
+   .title1 {
+      font-size: 36px;
+      line-height: 42px;
+   }
+   .main-banner {
+      padding: 154px 0 132px;
+   }
+   .main-banner__logo {
+      margin-bottom: 54px;
+   }
+   .main-banner__title {
+      margin-bottom: 42px;
+   }
+   .main-banner__hr {
+      margin-bottom: 31px;
+   }
+   .main-banner__text {
+      margin-bottom: 31px;
+   }
+   .title5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
+   .title4 {
+      font-size: 18px;
+      line-height: 25px;
+   }
+   .main__head {
+      padding-left: 115px;
+   }
+   .footer {
+      padding: 30px 0 10px;
+   }
+   .media-brands__img {
+      width: 80%;
+   }
+}
+
+/*description*/
+.description {
+   padding: 70px 0 50px;
+}
+.title3 {
+   font-size: 24px;
+   line-height: 33px;
+}
+.description__text {
+   margin-right: 25px;
+   padding-left: 15px;
+}
+.description__title {
+   padding: 28px 0;
+}
+
+/*advantage*/
+.advantage {
+   padding: 0 0 60px;
+}
+
+.title2 {
+   font-size: 24px;
+   line-height: 28px;
+}
+.title__block {
+   padding: 25px 0;
+}
+.subtitle__block {
+   margin-bottom: 50px;
+}
+
+/*Price*/
+
+/*Opinion*/
+.mind-card__blockquote {
+   padding: 50px 15px;
+}
+
+/*Axure-design*/
+
+@media (max-width: 991px) {
+   .container-lg,
+   .container-md,
+   .container-sm,
+   .container {
+      max-width: 960px;
+   }
+   .title5 {
+      font-size: 12px;
+      line-height: 14px;
+   }
+
+   /*main-banner*/
+   .main__head {
+      padding-left: 15px;
+   }
+   /*social-media*/
+   .media__title {
+      margin-bottom: 0px;
+   }
+   /*description*/
+   .description__text {
+      margin-right: 25px;
+   }
+
+   /*advantage*/
+   .benefits-card {
+      margin-bottom: 40px;
+   }
+   .benefits-card:last-child {
+      margin-bottom: 0px;
+   }
+   .benefits-card__img {
+      margin-bottom: 10px;
+   }
+   /*price*/
+
+   /*opinion*/
+   .mind-card__blockquote {
+      padding: 30px 15px;
+   }
+   /*axure-design*/
+   /*contact*/
+   /*footer*/
+   .media-brands__img {
+      width: 70%;
+   }
+   .media-footer {
+      margin-bottom: 10px;
+   }
+}
+
+@media (max-width: 767px) {
+   .container-md,
+   .container-sm,
+   .container {
+      max-width: 720px;
+   }
+}
+@media (max-width: 575px) {
+   .container-sm,
+   .container {
+      max-width: 540px;
+   }
+}
