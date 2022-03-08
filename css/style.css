@@ -167,10 +167,6 @@ h6,
    padding: 231px 0 185px;
    color: white;
 }
-.main__content {
-   display: flex;
-   justify-content: space-between;
-}
 
 .main-banner__logo {
    margin-bottom: 73px;
@@ -271,12 +267,14 @@ h6,
    /*display: flex;
    justify-content: space-between;
    width: 637px;*/
-   padding: 28px 0 10px;
+   padding: 38px 0 10px;
 }
-
+.media-brands__img {
+   width: 90%;
+}
 /*Description*/
 .description {
-   padding: 109px 0 50px;
+   padding: 109px 0px 0px;
 }
 .description__link {
    font-family: "Open Sans";
@@ -328,7 +326,7 @@ h6,
 
 /*Advantage*/
 .advantage {
-   padding: 0 0 58px;
+   padding: 50px 0 58px;
 }
 .title-head {
    text-align: center;
@@ -337,8 +335,8 @@ h6,
    text-align: center;
 }
 .title__block {
-   padding: 54px 0;
    text-transform: uppercase;
+   padding: 54px 0;
 }
 .hr--light {
    border-color: white;
@@ -500,13 +498,16 @@ h6,
 
 /*Footer*/
 .footer {
-   padding: 40px 0 27px;
+   padding: 30px 0 27px;
    background-color: black;
    text-align: center;
    /*display: flex;
    justify-content: center;*/
 }
 .media-footer {
-   margin-bottom: 35px;
+   margin-bottom: 25px;
    padding: 0px;
+}
+.footer-img {
+   width: 60%;
 }

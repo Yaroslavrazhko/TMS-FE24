@@ -7,6 +7,9 @@
    .container {
       max-width: 1320px;
    }
+   .media-brands__img {
+      width: 80%;
+   }
 }
 @media (max-width: 1199px) {
    .container-xl,
@@ -16,86 +19,86 @@
    .container {
       max-width: 1140px;
    }
-   /*main-banner*/
+   /*Main banner*/
+   .main-banner__title {
+      max-width: 450px;
+   }
    .title1 {
       font-size: 36px;
       line-height: 42px;
    }
-   .main-banner {
-      padding: 154px 0 132px;
-   }
-   .main-banner__logo {
-      margin-bottom: 54px;
+   .main__head {
+      padding-left: 80px;
    }
    .main-banner__title {
-      margin-bottom: 42px;
+      margin-bottom: 40px;
    }
    .main-banner__hr {
       margin-bottom: 31px;
    }
-   .main-banner__text {
-      margin-bottom: 31px;
+   /*Social*/
+   .social {
+      padding: 0 0 10px;
+   }
+   .title2 {
+      font-size: 24px;
+      line-height: 28px;
    }
    .title5 {
       font-size: 14px;
       line-height: 16px;
    }
+   .media__title {
+      margin-bottom: 0px;
+   }
+   .media-brands__list {
+      padding: 28px 0 10px;
+   }
+   /*Description*/
+   .description {
+      padding: 50px 0px 0px;
+   }
+   .title3 {
+      font-size: 24px;
+      line-height: 33px;
+   }
+   .description__text {
+      padding-left: 85px;
+   }
+   .description__title {
+      padding: 28px 0;
+      margin-bottom: 10px;
+   }
+   .description__subtitle {
+      max-width: 450px;
+   }
+   /*Advantages*/
    .title4 {
       font-size: 18px;
       line-height: 25px;
    }
-   .main__head {
-      padding-left: 115px;
+   .title__block {
+      padding: 46px 0;
    }
-   .footer {
-      padding: 30px 0 10px;
+   .hr__block {
+      margin-bottom: 32px;
    }
-   .media-brands__img {
-      width: 80%;
+   .subtitle__block {
+      margin-bottom: 65px;
+   }
+   .benefits-card__img {
+      width: 75px;
+      height: 75px;
+      margin-bottom: 28px;
+   }
+   /*Opinion*/
+   /*Axure design*/
+   /*Contact*/
+   /*Footer*/
+   .footer-img {
+      width: 70%;
    }
 }
-
-/*description*/
-.description {
-   padding: 70px 0 50px;
-}
-.title3 {
-   font-size: 24px;
-   line-height: 33px;
-}
-.description__text {
-   margin-right: 25px;
-   padding-left: 15px;
-}
-.description__title {
-   padding: 28px 0;
-}
-
-/*advantage*/
-.advantage {
-   padding: 0 0 60px;
-}
-
-.title2 {
-   font-size: 24px;
-   line-height: 28px;
-}
-.title__block {
-   padding: 25px 0;
-}
-.subtitle__block {
-   margin-bottom: 50px;
-}
-
-/*Price*/
-
-/*Opinion*/
-.mind-card__blockquote {
-   padding: 50px 15px;
-}
-
-/*Axure-design*/
-
 @media (max-width: 991px) {
    .container-lg,
    .container-md,
@@ -103,49 +106,66 @@
    .container {
       max-width: 960px;
    }
-   .title5 {
-      font-size: 12px;
-      line-height: 14px;
+   .title4 {
+      font-size: 14px;
+      line-height: 18px;
+   }
+   /*Main banner*/
+   .main__head {
+      padding-left: 30px;
+   }
+   /*Social*/
+   .media-brands__img {
+      width: 70%;
+   }
+   .media-brands__list {
+      padding: 28px 0 10px;
+   }
+   /*Description*/
+   .description__text {
+      padding-left: 30px;
    }
 
-   /*main-banner*/
-   .main__head {
-      padding-left: 15px;
-   }
-   /*social-media*/
-   .media__title {
+   /*Advantages*/
+   .benefits-card__title {
+      padding: 20px 0;
       margin-bottom: 0px;
    }
-   /*description*/
-   .description__text {
-      margin-right: 25px;
+   .benefits-card__img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 0px;
    }
-
-   /*advantage*/
    .benefits-card {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
    }
    .benefits-card:last-child {
       margin-bottom: 0px;
    }
-   .benefits-card__img {
-      margin-bottom: 10px;
-   }
-   /*price*/
-
-   /*opinion*/
+   /*Price*/
+   /*Opinion*/
    .mind-card__blockquote {
-      padding: 30px 15px;
+      text-align: left;
+      border-radius: 10px;
+      background-color: #e2e2e2;
+      padding: 25px 10px;
+      position: relative;
+      margin-bottom: 40px;
    }
-   /*axure-design*/
-   /*contact*/
-   /*footer*/
-   .media-brands__img {
-      width: 70%;
+   .treangular {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #e2e2e2;
+      bottom: -15px;
    }
-   .media-footer {
-      margin-bottom: 10px;
+   .mind-card__photo {
+      width: 60px;
+      height: 60px;
    }
+
+   /*Axure design*/
+   /*Contact*/
+   /*Footer*/
 }
 
 @media (max-width: 767px) {
