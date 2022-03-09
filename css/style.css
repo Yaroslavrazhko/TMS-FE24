@@ -174,7 +174,6 @@ h6,
 
 .main-banner__title {
    margin-bottom: 55px;
-   max-width: 670px;
 }
 .main-banner__title:last-child {
    margin-bottom: 0px;
@@ -259,10 +258,6 @@ h6,
    padding: 14px 0;
 }
 
-.media__text {
-   /*max-width: 470px;*/
-}
-
 .media-brands__list {
    /*display: flex;
    justify-content: space-between;
@@ -294,7 +289,6 @@ h6,
 
 .description__text {
    padding-left: 100px;
-   max-width: 570px;
 }
 .description__title {
    padding: 42px 0;
