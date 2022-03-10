@@ -287,5 +287,9 @@
    /*Opinion*/
    /*Axure design*/
    /*Contact*/
+   .form__contact {
+      width: 100%;
+      margin-bottom: 50px;
+   }
    /*Footer*/
 }
