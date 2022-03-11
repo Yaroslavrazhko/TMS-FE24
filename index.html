@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
 </head>
@@ -67,6 +68,7 @@
               <div class="button form__button">Get Started</div>
             </form>
           </div>
+
         </div>
       </div>
     </section>
@@ -77,41 +79,33 @@
     <section class="social">
       <div class="container">
         <address class="row">
-          <div class="media__info col-lg-5 col-md-5">
+          <div class="media__info col-lg-5 col-md-5 col-12">
             <h3 class="title4 media__title">Social Media</h3>
             <p class="title5 media__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quo officiis
               maxime.</p>
           </div>
-          <div class="media-brands col-lg-7 col-md-7">
+          <div class="media-brands col-lg-7 col-md-7 col-12">
             <ul class="media-brands__list d-flex justify-content-between">
               <li class="media-brands__item">
-                <a href="" class="media-brands__link ">
-                  <img src="./images/facebook_icon.svg" alt="facebook" class="media-brands__img"></a>
-              </li>
-
-              <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/github_icon.svg" alt="github" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/instagram_icon.svg" alt="Instagram" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-brands fa-github"></i></a>
               </li>
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/linkedin_icon.svg" alt="LinkedIn" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/pinterest_icon.svg" alt="Pinterest" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-brands fa-linkedin"></i></a>
               </li>
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/rss_icon.svg" alt="rss" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-brands fa-pinterest"></i></a>
               </li>
               <li class="media-brands__item">
-                <a href="" class="media-brands__link">
-                  <img src="./images/twitter_icon.svg" alt="twitter" class="media-brands__img"></a>
+                <a href="" class="media-brands__link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              <li class="media-brands__item">
+                <a href="" class="media-brands__link"><i class="fa-brands fa-twitter"></i></a>
               </li>
             </ul>
           </div>
@@ -126,32 +120,29 @@
       <div class="container">
         <h2 hidden>More information about Axit</h2>
         <div class="description__menu">
-
           <ul class="description__list">
             <li class="description__item"><a href="" class="description__link title6">TAB1</a></li>
             <li class="description__item"><a href="" class="description__link title6">TAB2</a></li>
             <li class="description__item"><a href="" class="description__link title6">TAB3</a></li>
           </ul>
         </div>
-
-        <div class="description__info">
-          <div class="description__text">
-            <h3 class="description__title title3">Tabs with soft transitioning effect.</h3>
-            <p class="description__subtitle title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-              penatibus et magnis dis parturient montes.
-
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet.</p>
-
-            <a href="" class="button">Download</a>
+        <div class=" description__info ">
+          <div class="row">
+            <div class="description__text col-lg-7 col-md-6">
+              <h3 class="description__title title3">Tabs with soft transitioning effect.</h3>
+              <p class="description__subtitle title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.</p>
+              <a href="" class="button">Download</a>
+            </div>
+            <div class="description-img col-lg-5 col-md-6">
+              <img src="./images/american_statue.jpg" alt="tabs with soft transitioning effect">
+            </div>
           </div>
-          <picture class="description-img">
-            <source srcset="./images/ipad/statue1024.jpg" media="(max-width: 1199px)">
-            <img src="./images/american_statue.jpg" alt="tabs with soft transitioning effect1">
-          </picture>
         </div>
     </section>
 
@@ -265,7 +256,7 @@
             <div class="profile">
               <img src="./images/Ellipse 7-1.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
-                <h3 class="title4 mind-card__customer-name">Davis Rhiel Madsen</h3>
+                <h3 class="title4 title4--md mind-card__customer-name">Davis Rhiel Madsen</h3>
                 <p class="title5 mind-card__position">Manager</p>
               </div>
             </div>
@@ -284,7 +275,7 @@
             <div class="profile">
               <img src="./images/Ellipse 7-2.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
-                <h3 class="title4 mind-card__customer-name">Jaydon Rosser</h3>
+                <h3 class="title4 title4--md mind-card__customer-name">Jaydon Rosser</h3>
                 <p class="title5 mind-card__position">Manager</p>
               </div>
             </div>
@@ -303,7 +294,7 @@
             <div class="profile">
               <img src="./images/Ellipse 7.jpg" alt="Davis Rhiel Madsen" class="mind-card__photo">
               <div class="personal-data">
-                <h3 class="title4 mind-card__customer-name">Cooper Dorwart</h3>
+                <h3 class="title4 title4--md mind-card__customer-name">Cooper Dorwart</h3>
                 <p class="title5 mind-card__position">Manager</p>
               </div>
             </div>
@@ -361,36 +352,28 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="media-footer col-lg-6 offset-lg-3 col-md-7 offset-md-3 col-sm-10 offset-sm-1">
-          <ul class="media-brands__list d-flex justify-content-between">
+        <div class="media-footer col-lg-6 offset-lg-3 col-md-7 offset-md-3 col-sm-10 offset-sm-1 col-10 offset-1">
+          <ul class="media-brands__list-footer d-flex justify-content-between">
             <li class="media-brands__item">
-              <a href="" class="media-brands__link ">
-                <img src="./images/facebook_icon.svg" alt="facebook" class="media-brands__img footer-img"></a>
-            </li>
-
-            <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/github_icon.svg" alt="github" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-facebook-f"></i></a>
             </li>
             <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/instagram_icon.svg" alt="Instagram" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-github"></i></a>
             </li>
             <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/linkedin_icon.svg" alt="LinkedIn" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-instagram"></i></a>
             </li>
             <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/pinterest_icon.svg" alt="Pinterest" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-linkedin"></i></a>
             </li>
             <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/rss_icon.svg" alt="rss" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-pinterest"></i></a>
             </li>
             <li class="media-brands__item">
-              <a href="" class="media-brands__link">
-                <img src="./images/twitter_icon.svg" alt="twitter" class="media-brands__img footer-img"></a>
+              <a href="" class="media-brands__link"><i class="fa-solid fa-solid-footer fa-rss"></i></a>
+            </li>
+            <li class="media-brands__item">
+              <a href="" class="media-brands__link"><i class="fa-brands fa-brands-footer fa-twitter"></i></a>
             </li>
           </ul>
         </div>

@@ -7,9 +7,6 @@
    .container {
       max-width: 1320px;
    }
-   .media-brands__img {
-      width: 80%;
-   }
 }
 @media (max-width: 1199px) {
    .container-xl,
@@ -37,6 +34,10 @@
    .social {
       padding: 0 0 10px;
    }
+   .fa-brands,
+   .fa-solid {
+      font-size: 45px;
+   }
    .title2 {
       font-size: 24px;
       line-height: 28px;
@@ -48,8 +49,11 @@
    .media__title {
       margin-bottom: 0px;
    }
+   .media__text {
+      text-align: center;
+   }
    .media-brands__list {
-      padding: 28px 0 10px;
+      padding: 25px 0 0;
    }
    /*Description*/
    .description {
@@ -67,7 +71,7 @@
       margin-bottom: 10px;
    }
    .description__subtitle {
-      padding: 0 30px;
+      padding: 0 30px 0 0;
    }
    /*Advantages*/
    .title4 {
@@ -92,8 +96,9 @@
    /*Axure design*/
    /*Contact*/
    /*Footer*/
-   .footer-img {
-      width: 70%;
+   .fa-brands-footer,
+   .fa-solid-footer {
+      font-size: 35px;
    }
 }
 @media (max-width: 991px) {
@@ -104,19 +109,25 @@
       max-width: 960px;
    }
    .title4 {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 25px;
    }
    /*Main banner*/
    .main__head {
       padding-left: 30px;
    }
    /*Social*/
-   .media-brands__img {
-      width: 70%;
-   }
+
    .media-brands__list {
-      padding: 28px 0 10px;
+      padding: 28px 0 0px;
+   }
+   .fa-brands,
+   .fa-solid {
+      font-size: 40px;
+   }
+   .title4--md {
+      font-size: 16px;
+      line-height: 18px;
    }
    /*Description*/
    .description__text {
@@ -167,7 +178,11 @@
    /*Contact*/
    /*Footer*/
    .footer {
-      padding: 10px 0 10px;
+      padding: 30px 0 20px;
+   }
+   .fa-brands-footer,
+   .fa-solid-footer {
+      font-size: 35px;
    }
 }
 @media (max-width: 767px) {
@@ -226,7 +241,7 @@
    }
    /*Advantages*/
    .advantage {
-      padding: 50px 0 50px;
+      padding: 0px 0 50px;
    }
    /*Price*/
    .price {
@@ -248,6 +263,9 @@
    }
    .profile {
       margin-bottom: 30px;
+   }
+   .profile:last-child {
+      margin-bottom: 0px;
    }
 
    /*Axure design*/
@@ -278,6 +296,10 @@
       margin-left: 0%;
    }
    /*Social*/
+   .fa-brands,
+   .fa-solid {
+      font-size: 35px;
+   }
    /*Description*/
    .description__text {
       padding: 0 10px;
@@ -292,4 +314,8 @@
       margin-bottom: 50px;
    }
    /*Footer*/
+   .fa-brands--footer,
+   .fa-solid--footer {
+      font-size: 35px;
+   }
 }

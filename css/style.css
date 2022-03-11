@@ -15,7 +15,9 @@ body {
    line-height: 21px;
    background-color: white;
 }
-
+.fa-facebook {
+   color: red;
+}
 h1,
 .title1 {
    color: white;
@@ -96,23 +98,22 @@ h6,
    background-color: transparent;
    border: 2px solid white;
 }
-.button--light:hover {
-   color: #ec7979;
-   border: 2px solid #ec7979;
-   background-color: none;
-}
-.button--light:active {
-   color: white;
-   border: 2px solid #ec7979;
-   background-color: #ab4949;
-}
-
 .button:hover {
    background-color: #ab4949;
 }
 .button:active {
    box-shadow: 0px 0px 10px #ab4949;
    background-color: #ec7979;
+}
+.button--light:hover {
+   color: #ec7979;
+   border: 2px solid #ec7979;
+   background-color: transparent;
+}
+.button--light:active {
+   color: white;
+   border: 2px solid #ec7979;
+   background-color: #ab4949;
 }
 
 .hr {
@@ -174,7 +175,6 @@ h6,
 
 .main-banner__title {
    margin-bottom: 55px;
-   
 }
 .main-banner__title:last-child {
    margin-bottom: 0px;
@@ -193,7 +193,6 @@ h6,
    margin-bottom: 0px;
 }
 .form {
-   /*width: 470px;*/
    background-color: white;
    border-radius: 10px;
    overflow: hidden;
@@ -248,25 +247,20 @@ h6,
    background-color: #f8efef;
    padding: 0 0 18px;
 }
-/*.media {
-   display: flex;
-   justify-content: space-between;
-}*/
+
 .media__title {
    color: #333333;
    margin-bottom: 18px;
-   /*max-width: 470px;*/
    padding: 14px 0;
 }
 
 .media-brands__list {
-   /*display: flex;
-   justify-content: space-between;
-   width: 637px;*/
-   padding: 38px 0 10px;
+   padding: 45px 0 0 0;
 }
-.media-brands__img {
-   width: 90%;
+.fa-brands,
+.fa-solid {
+   font-size: 50px;
+   color: #cccccc;
 }
 /*Description*/
 .description {
@@ -283,9 +277,8 @@ h6,
 .description__info {
    border: 1px solid;
    border-color: #c6cbcd;
-   display: flex;
-   justify-content: space-between;
    position: relative;
+   max-width: 100%;
 }
 
 .description__text {
@@ -317,6 +310,9 @@ h6,
    border-top-right-radius: 10px;
    background-color: white;
    top: 1px;
+}
+.description-img {
+   max-width: 100%;
 }
 
 /*Advantage*/
@@ -493,16 +489,16 @@ h6,
 
 /*Footer*/
 .footer {
-   padding: 30px 0 27px;
+   padding: 40px 0 27px;
    background-color: black;
    text-align: center;
-   /*display: flex;
-   justify-content: center;*/
 }
 .media-footer {
    margin-bottom: 25px;
    padding: 0px;
 }
-.footer-img {
-   width: 60%;
+.fa-brands-footer,
+.fa-solid-footer {
+   font-size: 40px;
 }
+
