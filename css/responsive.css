@@ -49,9 +49,6 @@
    .media__title {
       margin-bottom: 0px;
    }
-   .media__text {
-      text-align: center;
-   }
    .media-brands__list {
       padding: 25px 0 0;
    }
@@ -196,6 +193,9 @@
       font-size: 18px;
       line-height: 21px;
    }
+   .fa-regular,
+.fa-solid {
+   font-size: 55px;
    /*Main banner*/
    .main-banner {
       padding: 200px 0 50px;
@@ -316,6 +316,6 @@
    /*Footer*/
    .fa-brands--footer,
    .fa-solid--footer {
-      font-size: 35px;
+      font-size: 30px;
    }
 }

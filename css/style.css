@@ -15,9 +15,12 @@ body {
    line-height: 21px;
    background-color: white;
 }
-.fa-facebook {
-   color: red;
+.fa-regular,
+.fa-solid {
+   font-size: 65px;
+   color: #ec7979;
 }
+
 h1,
 .title1 {
    color: white;
@@ -272,6 +275,7 @@ h6,
    line-height: 19px;
    text-decoration: none;
    display: block;
+   color: black;
 }
 
 .description__info {
@@ -311,7 +315,7 @@ h6,
    background-color: white;
    top: 1px;
 }
-.description-img {
+.des-image {
    max-width: 100%;
 }
 
@@ -343,13 +347,13 @@ h6,
    margin-bottom: 110px;
 }
 
-.benefits-card__img {
+/*.benefits-card__img {
    width: 92px;
    height: 92px;
    border-radius: 50%;
    border: 1px solid #ec7979;
    margin-bottom: 39px;
-}
+}*/
 .benefits-card {
    text-align: center;
 }
@@ -501,4 +505,3 @@ h6,
 .fa-solid-footer {
    font-size: 40px;
 }
-
