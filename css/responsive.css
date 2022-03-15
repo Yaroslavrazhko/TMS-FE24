@@ -109,6 +109,8 @@
       font-size: 18px;
       line-height: 25px;
    }
+   /*Header*/
+
    /*Main banner*/
    .main__head {
       padding-left: 30px;
@@ -194,8 +196,9 @@
       line-height: 21px;
    }
    .fa-regular,
-.fa-solid {
-   font-size: 55px;
+   .fa-solid {
+      font-size: 55px;
+   }
    /*Main banner*/
    .main-banner {
       padding: 200px 0 50px;
@@ -277,6 +280,10 @@
       padding: 0 0 50px;
    }
    /*Footer*/
+   .fa-brands--footer,
+   .fa-solid--footer {
+      font-size: 35px;
+   }
 }
 
 @media (max-width: 575px) {
