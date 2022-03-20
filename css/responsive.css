@@ -16,6 +16,7 @@
    .container {
       max-width: 1140px;
    }
+
    /*Main banner*/
    .title1 {
       font-size: 36px;
@@ -110,6 +111,10 @@
       line-height: 25px;
    }
    /*Header*/
+   .menu__link {
+      padding: 0 20px;
+      min-width: 100px;
+   }
 
    /*Main banner*/
    .main__head {
@@ -199,6 +204,43 @@
    .fa-solid {
       font-size: 55px;
    }
+   /*Header*/
+   .header--active:checked {
+      height: 100%;
+   }
+
+   .menu {
+      display: block;
+      position: fixed;
+      top: 50px;
+      left: 0px;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+   }
+   [name="burger-box"] {
+      display: none;
+   }
+   [name="burger-box"]:checked + .menu {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .menu__item:first-child {
+      padding-top: 40px;
+   }
+   .menu__item {
+      padding-bottom: 30px;
+   }
+   .menu__item:last-child {
+      padding-bottom: 0px;
+   }
+   .menu__link {
+      margin: 0 auto;
+   }
+   .menu-burger {
+      display: block;
+   }
    /*Main banner*/
    .main-banner {
       padding: 200px 0 50px;
@@ -265,9 +307,16 @@
       padding: 0 0 50px;
    }
    .profile {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
    }
+
    .profile:last-child {
+      margin-bottom: 0px;
+   }
+   .mind-card {
+      margin-bottom: 50px;
+   }
+   .mind-card:last-child {
       margin-bottom: 0px;
    }
 
@@ -291,6 +340,8 @@
    .container {
       max-width: 540px;
    }
+   /*Header*/
+
    /*Main banner*/
    .main__head {
       text-align: center;
@@ -306,6 +357,9 @@
    .fa-brands,
    .fa-solid {
       font-size: 35px;
+   }
+   .fa-bars {
+      font-size: 55px;
    }
    /*Description*/
    .description__text {
