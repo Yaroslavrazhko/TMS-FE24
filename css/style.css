@@ -81,7 +81,6 @@ h6,
    top: 0px;
    width: 100%;
 }
-
 .button {
    font-family: "Open Sans";
    font-weight: 600;
@@ -165,6 +164,14 @@ h6,
 }
 .menu__link:active {
    background-color: #ab4949;
+}
+[name="burger-box"] {
+   display: none;
+}
+.burger-button {
+   background: transparent;
+   border: none;
+   display: none;
 }
 
 /*Main-banner*/

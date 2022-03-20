@@ -200,10 +200,7 @@
       font-size: 18px;
       line-height: 21px;
    }
-   .fa-regular,
-   .fa-solid {
-      font-size: 55px;
-   }
+
    /*Header*/
 
    .menu {
@@ -218,117 +215,117 @@
    [name="burger-box"]:checked + .menu {
       opacity: 1;
       visibility: visible;
+      background-color: black;
+      height: 100%;
+   }
+   .menu__item:first-child {
+      padding-top: 40px;
+   }
+   .menu__item {
+      padding-bottom: 30px;
+   }
+   .menu__item:last-child {
+      padding-bottom: 0px;
+   }
+   .menu__link {
+      margin: 0 auto;
+   }
+   .burger-button {
+      display: block;
+   }
+   /*Main banner*/
+   .main-banner {
+      padding: 200px 0 50px;
+   }
+   .main__head {
+      padding-left: 0px;
+      padding-bottom: 40px;
+      text-align: center;
+      margin-left: 16.66666667%;
+   }
+   .main-banner__logo {
+      display: none;
+   }
+   .main-banner__text {
+      display: none;
+   }
+   .main-banner__hr {
+      display: none;
+   }
+   .main__form {
+      margin-left: 8.33333333%;
+   }
+   /*Social*/
+   .media__title {
+      text-align: center;
+   }
+   .social {
+      padding: 10px 0 10px;
+   }
+   .media-brands__list {
+      padding: 20px 0 10px;
+   }
+   /*Description*/
+   .description__info {
+      text-align: center;
+      padding-bottom: 40px;
+   }
+   .description-img {
+      display: none;
+   }
+   .description__text {
+      padding: 0 30px;
+   }
+   /*Advantages*/
+   .advantage {
+      padding: 0px 0 50px;
+   }
+   /*Price*/
+   .price {
+      padding: 0px;
+   }
+   .subtitle__block {
+      margin-bottom: 30px;
+   }
+   .price__item {
+      margin-bottom: 50px;
+   }
+
+   .price__item-accent {
+      transform: none;
+   }
+   /*Opinion*/
+   .opinion {
+      padding: 0 0 50px;
+   }
+   .profile {
+      margin-bottom: 20px;
+   }
+
+   .profile:last-child {
+      margin-bottom: 0px;
+   }
+   .mind-card {
+      margin-bottom: 50px;
+   }
+   .mind-card:last-child {
+      margin-bottom: 0px;
+   }
+
+   /*Axure design*/
+   .axure-design {
+      padding: 0 0 50px;
+   }
+   /*Contact*/
+   .contact {
+      padding: 0 0 50px;
+   }
+   /*Footer*/
+   .fa-brands--footer,
+   .fa-solid--footer {
+      font-size: 35px;
    }
 }
-
-.menu__item:first-child {
-   padding-top: 40px;
-}
-.menu__item {
-   padding-bottom: 30px;
-}
-.menu__item:last-child {
-   padding-bottom: 0px;
-}
-.menu__link {
-   margin: 0 auto;
-}
-.burger-button {
-   display: block;
-}
-/*Main banner*/
-.main-banner {
-   padding: 200px 0 50px;
-}
-.main__head {
-   padding-left: 0px;
-   padding-bottom: 40px;
-   text-align: center;
-   margin-left: 16.66666667%;
-}
-.main-banner__logo {
-   display: none;
-}
-.main-banner__text {
-   display: none;
-}
-.main-banner__hr {
-   display: none;
-}
-.main__form {
-   margin-left: 8.33333333%;
-}
-/*Social*/
-.media__title {
-   text-align: center;
-}
-.social {
-   padding: 10px 0 10px;
-}
-.media-brands__list {
-   padding: 20px 0 10px;
-}
-/*Description*/
-.description__info {
-   text-align: center;
-   padding-bottom: 40px;
-}
-.description-img {
-   display: none;
-}
-.description__text {
-   padding: 0 30px;
-}
-/*Advantages*/
-.advantage {
-   padding: 0px 0 50px;
-}
-/*Price*/
-.price {
-   padding: 0px;
-}
-.subtitle__block {
-   margin-bottom: 30px;
-}
-.price__item {
-   margin-bottom: 50px;
-}
-
-.price__item-accent {
-   transform: none;
-}
-/*Opinion*/
-.opinion {
-   padding: 0 0 50px;
-}
-.profile {
-   margin-bottom: 20px;
-}
-
-.profile:last-child {
-   margin-bottom: 0px;
-}
-.mind-card {
-   margin-bottom: 50px;
-}
-.mind-card:last-child {
-   margin-bottom: 0px;
-}
-
-/*Axure design*/
-.axure-design {
-   padding: 0 0 50px;
-}
-/*Contact*/
-.contact {
-   padding: 0 0 50px;
-}
-/*Footer*/
-.fa-brands--footer,
-.fa-solid--footer {
-   font-size: 35px;
-}
-
 @media (max-width: 575px) {
    .container-sm,
    .container {
