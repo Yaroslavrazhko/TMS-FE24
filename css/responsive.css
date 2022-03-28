@@ -259,6 +259,9 @@
    .media__title {
       text-align: center;
    }
+   .media__text {
+      text-align: center;
+   }
    .social {
       padding: 10px 0 10px;
    }

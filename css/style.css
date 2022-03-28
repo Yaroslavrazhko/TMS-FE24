@@ -365,11 +365,7 @@ h6,
 .description__list {
    display: flex;
 }
-.description__item {
-   width: 185px;
-   text-align: center;
-   padding: 10px 0;
-}
+
 .des-image {
    max-width: 100%;
 }
@@ -382,7 +378,7 @@ h6,
 [name="tabs"]:checked + .tab {
    display: flex;
 }
-.description__item:first-child {
+/*.description__item {
    border: 1px #c6cbcd;
    border-style: solid solid none;
    position: relative;
@@ -393,6 +389,23 @@ h6,
    border-top-right-radius: 10px;
    background-color: white;
    top: 1px;
+}*/
+
+.description__item {
+   width: 185px;
+   padding: 10px 0;
+   text-align: center;
+}
+.description__item:checked {
+   background-color: white;
+   top: 1px;
+   position: relative;
+   z-index: 2;
+   border: 1px #c6cbcd;
+   border-style: solid solid none;
+   width: 200px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 }
 
 /*Description ENDS*/
@@ -558,10 +571,7 @@ h6,
 .form__contact {
    margin-bottom: 50px;
 }
-.form__textarea {
-   resize: none;
-}
-
+title6
 /*Footer*/
 .footer {
    padding: 40px 0 27px;
