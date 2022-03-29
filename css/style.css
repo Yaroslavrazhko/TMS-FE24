@@ -117,6 +117,24 @@ h6,
    border: 2px solid #ec7979;
    background-color: #ab4949;
 }
+.btn-animation:hover {
+   animation-name: btn-animation;
+   animation-duration: 1s;
+   position: relative;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes btn-animation {
+   0% {
+      left: 0px;
+   }
+   50% {
+      left: -10px;
+   }
+   100% {
+      left: 10px;
+   }
+}
 
 .hr {
    margin: 0 auto;
@@ -469,7 +487,8 @@ h6,
    color: white;
 }
 
-/*Contact*/
+/*Contact-Bootstrap
+
 .contact {
    padding: 50px 0;
    text-align: center;
@@ -491,6 +510,48 @@ h6,
 .form__contact {
    margin-bottom: 50px;
 }
+.form__textarea {
+   resize: none;
+}*/
+/*Contact-Grid*/
+
+.contact {
+   padding: 50px 0;
+   text-align: center;
+}
+
+.contact-grid {
+   display: grid;
+   grid-template: auto/ 1fr;
+   grid-template-areas: "title-head" "form-contact" "btn-contact";
+}
+.form__contact {
+   display: grid;
+   grid-template: 1 / 0.5fr 0.5fr;
+   grid-template-areas: "form__list form__area";
+   gap: 30px;
+}
+.button {
+   text-align: center;
+}
+
+.contact__title {
+   padding: 54px 0;
+}
+.contact__hr {
+   margin-bottom: 40px;
+}
+.contact__text {
+   margin-bottom: 89px;
+}
+
+.form__contact {
+   margin-bottom: 50px;
+}
+.form__textarea {
+   resize: none;
+}
+
 /*Footer*/
 .footer {
    padding: 40px 0 27px;

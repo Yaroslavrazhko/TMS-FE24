@@ -345,6 +345,10 @@
    .contact {
       padding: 0 0 50px;
    }
+   .form__contact {
+      grid-template: auto / 1fr;
+      gap: 0px;
+   }
    /*Footer*/
    .fa-brands--footer,
    .fa-solid--footer {
