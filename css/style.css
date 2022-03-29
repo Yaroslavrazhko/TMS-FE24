@@ -181,7 +181,7 @@ h6,
    background-size: cover;
    background-position: 0 100%;
    text-align: left;
-   padding: 231px 0 185px;
+   padding: 283px 0 185px;
    color: white;
 }
 
@@ -278,63 +278,10 @@ h6,
    font-size: 50px;
    color: #cccccc;
 }
-/*Description*/
-/*
-.description {
-   padding: 109px 0px 0px;
-}
-.description__link {
-   font-family: "Open Sans";
-   font-size: 14px;
-   line-height: 19px;
-   text-decoration: none;
-   display: block;
-   color: black;
-}
 
-.description__info {
-   border: 1px solid;
-   border-color: #c6cbcd;
-   position: relative;
-   max-width: 100%;
-}
-
-.description__text {
-   padding-left: 100px;
-}
-.description__title {
-   padding: 42px 0;
-   margin-bottom: 27px;
-}
-.description__subtitle {
-   margin-bottom: 27px;
-}
-.description__list {
-   display: flex;
-}
-.description__item {
-   width: 185px;
-   text-align: center;
-   padding: 10px 0;
-}
-.description__item:first-child {
-   border: 1px #c6cbcd;
-   border-style: solid solid none;
-   position: relative;
-   z-index: 2;
-   width: 200px;
-   text-align: center;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   background-color: white;
-   top: 2px;
-}
-.des-image {
-   max-width: 100%;
-}*/
 /*Description*/
 .description {
-   padding: 109px 0px 0px;
+   padding: 100px 0px 0px;
 }
 .description__link {
    font-family: "Open Sans";
@@ -378,25 +325,13 @@ h6,
 [name="tabs"]:checked + .tab {
    display: flex;
 }
-/*.description__item {
-   border: 1px #c6cbcd;
-   border-style: solid solid none;
-   position: relative;
-   z-index: 2;
-   width: 200px;
-   text-align: center;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   background-color: white;
-   top: 1px;
-}*/
 
 .description__item {
    width: 185px;
    padding: 10px 0;
    text-align: center;
 }
-.description__item:checked {
+.description__item:first-child {
    background-color: white;
    top: 1px;
    position: relative;
@@ -407,7 +342,6 @@ h6,
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
-
 /*Description ENDS*/
 /*Advantage*/
 .advantage {
@@ -437,13 +371,6 @@ h6,
    margin-bottom: 110px;
 }
 
-/*.benefits-card__img {
-   width: 92px;
-   height: 92px;
-   border-radius: 50%;
-   border: 1px solid #ec7979;
-   margin-bottom: 39px;
-}*/
 .benefits-card {
    text-align: center;
 }
@@ -561,22 +488,14 @@ h6,
    text-align: center;
 }
 
-/*.form__contact {
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-   align-self: flex-end;
-   margin-bottom: 50px;
-}*/
 .form__contact {
    margin-bottom: 50px;
 }
-title6
 /*Footer*/
 .footer {
    padding: 40px 0 27px;
-   background-color: black;
    text-align: center;
+   background-color: black;
 }
 .media-footer {
    margin-bottom: 25px;
