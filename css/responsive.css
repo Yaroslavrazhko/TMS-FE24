@@ -301,6 +301,9 @@
    .description__text {
       padding: 0 30px;
    }
+   .benefits-card:first-child {
+      margin-top: 60px;
+   }
    /*Advantages*/
    .advantage {
       padding: 0px 0 50px;

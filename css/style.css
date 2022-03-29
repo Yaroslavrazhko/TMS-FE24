@@ -128,11 +128,14 @@ h6,
    0% {
       left: 0px;
    }
-   50% {
+   33.3333% {
       left: -10px;
    }
-   100% {
+   66.666% {
       left: 10px;
+   }
+   100% {
+      left: 0px;
    }
 }
 
@@ -396,8 +399,22 @@ h6,
 .benefits-card__title {
    padding: 34px 0;
    margin-bottom: 8px;
+   margin-top: 39px;
 }
-
+.img-border {
+   border: 1px solid #ec7979;
+   border-radius: 50%;
+   width: 92px;
+   height: 92px;
+   position: relative;
+   display: inline-block;
+}
+.fa-regular {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   top: 50%;
+}
 /*Price*/
 .price {
    background: #f5f5f5;
@@ -502,19 +519,14 @@ h6,
 .contact__text {
    margin-bottom: 89px;
 }
-
-.contact__place {
-   text-align: center;
-}
-
 .form__contact {
    margin-bottom: 50px;
 }
 .form__textarea {
    resize: none;
 }*/
-/*Contact-Grid*/
 
+/*Contact-Grid*/
 .contact {
    padding: 50px 0;
    text-align: center;
@@ -530,9 +542,6 @@ h6,
    grid-template: 1 / 0.5fr 0.5fr;
    grid-template-areas: "form__list form__area";
    gap: 30px;
-}
-.button {
-   text-align: center;
 }
 
 .contact__title {
