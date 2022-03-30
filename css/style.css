@@ -314,8 +314,7 @@ h6,
 }
 
 .description__info {
-   border: 1px solid;
-   border-color: #c6cbcd;
+   border: 1px solid #c6cbcd;
    position: relative;
    max-width: 100%;
 }
