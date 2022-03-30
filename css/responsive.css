@@ -438,6 +438,10 @@
       margin-top: 43px;
       margin-bottom: 18px;
    }
+   .img-border {
+      width: 85px;
+      height: 85px;
+   }
    /*Price*/
    .price__item {
       margin-bottom: 27px;
